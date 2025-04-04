@@ -6,7 +6,7 @@ interface ShimmerProps {
 
 export const Shimmer: React.FC<ShimmerProps> = ({ count = 3 }) => {
   return (
-    <div>
+    <div data-testid="shimmer-container">
       {Array.from({ length: count }).map((_, index) => (
         <div key={index} className="mb-2 p-3 rounded-md shadow-sm border border-gray-200 bg-white overflow-hidden relative">
           {/* Shimmer overlay */}
